@@ -150,7 +150,7 @@ public class ValidationItemControllerV2 {
     @PostMapping("/add")
     public String addItemV4(@ModelAttribute Item item, BindingResult bindingResult, RedirectAttributes redirectAttributes, Model model) {
 
-        // 검증 로직
+        // 검증 로직e
         if(!StringUtils.hasText(item.getItemName())){
             bindingResult.rejectValue("itemName", "required");
         }
